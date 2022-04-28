@@ -54,9 +54,9 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
-nitrogen --restore > /tmp/log 2>&1 &
-polybar main > /tmp/x.log 2>&1 &
+nitrogen --restore &
+polybar main &
 picom &
-xsetroot -cursor_name left_ptr &&
-setxkbmap br &&
+xsetroot -cursor_name left_ptr &
+setxkbmap br &
 exec bspwm
