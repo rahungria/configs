@@ -1,3 +1,4 @@
+#!/bin/sh
 bat_number=0
 acpi=$(acpi -b 2>/dev/null | grep "Battery $bat_number")
 mode=$(echo "$acpi" | awk '{print $3}' | cut -d"," -f1)
